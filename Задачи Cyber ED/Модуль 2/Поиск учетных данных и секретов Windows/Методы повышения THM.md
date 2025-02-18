@@ -1,0 +1,1 @@
+[TryHackMe | Windows PrivEsc](https://tryhackme.com/r/room/windows10privesc)
