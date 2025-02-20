@@ -11,7 +11,8 @@ int main() {
 }
 ```
 
-[[Pasted image 20241115131619.png]]
+
+![Pasted image 20241115131619](https://github.com/user-attachments/assets/bf135b15-1888-40b1-b820-3a2ee404311d)
 
 Задача 2: создаем DLL для EXE вызывающий MessageBox
 ```
