@@ -1,11 +1,3 @@
-nameserver 10.154.0.70
-nameserver 10.127.2.100
-nameserver 192.168.72.2
-search localdomain
-
-![[Pasted image 20250206161652.png]]
- 
-
 
 s_skinner wtspass  (hash S_SKINNER::metaltech:1122334455667788:f9d6f696f81179f5c7ecf1784e178ab1:0101000000000000c0ebca0b8078db01c9a63e07471ecac900000000080030003000000000000000000000000020000046ac0e4761ffe342d5dc6db40dd721a91a2ff1698fb2e26575b48952f0b3ab760a00100000000000000000000000000000000000090000000000000000000000)
 LAPS        10.154.0.71         DC-2         Computer: SSKINNER$     Password: +aVK74972G%&,3,dI83L0J.VL{yGp}D(
@@ -26,7 +18,7 @@ Password : chevelle11
 h_nelson_admin
 codystell!
 
-![[Pasted image 20250210125112.png]]Administrator:500:aad3b435b51404eeaad3b435b51404ee:2d828283218560045d7eb366215fa94c:::
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:2d828283218560045d7eb366215fa94c:::
 ptadmin:1006:aad3b435b51404eeaad3b435b51404ee:5d7fd3df59debbf67f6d0b0ed2eab4b5:::
 
 
@@ -140,7 +132,7 @@ metaltech\BACKUP$:aad3b435b51404eeaad3b435b51404ee:d788336daa383e3e6ece21842a8a1
  b_valenzuela YSdBNUc2a11o86GW
  e_phelps 0jGFyfYvziTH9fe2
 
-![[Pasted image 20250210155709.png]]
+
 
 h_nelson h4MKQA3kTSyuwfNQ
 r_shelton XgaA2tSWQgxuMmqn

