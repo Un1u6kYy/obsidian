@@ -1,5 +1,5 @@
 
-![](../attachment/Pasted image 20250225231859.png)
+![[../attachment/Pasted image 20250225231859.png]]
 для доступа к сайту добавим target ip и domain в /etc/hosts
 
 Изучив сайт мы видим что это wordpress и запускаем wpscan
