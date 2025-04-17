@@ -1,0 +1,1 @@
+hashcat -m 100 -a 3 '4dc3938a74d81a31b10415ab83a5f55595b2c5f5' ?u?l?l?l?l?l?d?d?d -i --increment-min 9 --increment-max 9

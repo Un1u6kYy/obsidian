@@ -1,0 +1,1 @@
+hashcat -m 100 -a 0 '99da27ce3509d6da25128e0f279d3d8ecc33f9ef' /usr/share/wordlists/rockyou.txt 
