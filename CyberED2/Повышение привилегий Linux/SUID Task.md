@@ -1,2 +1,0 @@
-ищем suid файлы пользователя root find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
-видим /usr/bin/date и с помощью gtfobins (https://gtfobins.github.io/gtfobins/date/) находим способ чтения файла при наличие suid бит
